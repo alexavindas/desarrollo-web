@@ -1,21 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>informacion sobre uñas </title>
+    <title>Información sobre Uñas</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
     <style>
-       {p
-        color red
-       }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: pink;
+        }
+        p {
+            color: #333;
+            line-height: 1.6;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        a {
+            display: inline-block;
+            margin: 10px 15px;
+            padding: 10px;
+            background-color: #ff69b4;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+        a:hover {
+            background-color: #ff1493;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .form-section {
+            margin: 40px 0;
+            text-align: center;
+        }
+        form {
+            display: inline-block;
+            text-align: left;
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #ff1493;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
 </head>
 <body>
-    <h1 style="color:pink;">estos son los cuidados de las uñas</h1>
-    <a href= "./nails studio/uñaacrilicas.html"> uñas acrilicas</a>
-    <a href="./nails studio/uñasdegelx.html">uñas de gel x</a>
-    <p>Para cuidar tus uñas, es importante mantenerlas hidratadas, limpias y protegidas. También debes evitar que se sumerjan en agua por mucho tiempo. </p>
-    <br>
-    <img src="./imagenes/unas-acrilicas-vs-unas-de-gel.webp">
-    <p> si quisieras mas informacion del cuidado de tus uñas podras hacerme una pregunta proximamente,gracias por etsar aqui vicitando mi sitio web</p>
+    <div class="header">
+        <h1>Estos son los Cuidados de las Uñas</h1>
+        <nav>
+            <a href="./nails studio/uñaacrilicas.html">Uñas Acrílicas</a>
+            <a href="./nails studio/uñasdegelx.html">Uñas de Gel X</a>
+        </nav>
+    </div>
+    <img src="./imagenes/unas-acrilicas-vs-unas-de-gel.webp" alt="Comparación entre uñas acrílicas y uñas de gel">
+
+    <section class="form-section">
+        <h2>¿Tienes preguntas sobre el cuidado de tus uñas?</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+            <label for="pregunta">Pregunta:</label>
+            <textarea id="pregunta" name="pregunta" rows="4" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Alexa Vindas. Todos los derechos reservados created by Andres Ugalde.</p>
+    </footer>
 </body>
 </html>
