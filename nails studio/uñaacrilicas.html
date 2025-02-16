@@ -1,17 +1,92 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cuidado de las uñas acrilicas</title>
+    <title>Cuidado de las Uñas Acrílicas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+            transition: background-color 0.5s; /* Transición suave para el cambio de color */
+        }
+        h1 {
+            color: #ff69b4;
+            text-align: center;
+        }
+        p {
+            line-height: 1.6;
+            margin: 10px 0;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background-color: #ff69b4;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            text-align: center;
+        }
+        a:hover {
+            background-color: #ff1493;
+        }
+        .image-container {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 15px;
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #ff1493;
+        }
+    </style>
 </head>
 <body>
-   <p>Consejos para mantener tus uñas acrílicas</p> 
-   <p>procura aplicar y retirar bien el producto de tus uñas</p> 
-   <p>hidrata tus manos y uñas</p> 
-   <p>realiza rellenos regularmente</p> 
-   <p>ten en cuenta el estado de tus uñas naturales antes de aplicarte cualquier producto</p> 
-   <a href="../index.html">inicio</a>
-   <img src="../imagenes/acrilicas uno.webp" style="height: 400px;">
+    <h1>Consejos para Mantener tus Uñas Acrílicas</h1>
+    
+    <div class="image-container">
+        <img src="../imagenes/acrilicas uno.webp" alt="Uñas Acrílicas" style="height: 400px;">
+    </div>
+
+    <p><strong>1. Aplica y retira bien el producto:</strong> Asegúrate de seguir las instrucciones del fabricante para aplicar y retirar el producto de tus uñas.</p>
+    <p><strong>2. Hidrata tus manos y uñas:</strong> Usa crema hidratante o aceite para cutículas regularmente para mantener tus manos y uñas saludables.</p>
+    <p><strong>3. Realiza rellenos regularmente:</strong> Programa citas para rellenos cada 2-3 semanas para mantener la apariencia de tus uñas.</p>
+    <p><strong>4. Ten en cuenta el estado de tus uñas naturales:</strong> Antes de aplicar cualquier producto, verifica que tus uñas naturales estén en buen estado.</p>
+    
+    <button id="colorChangeButton">Cambiar Color de Fondo</button>
+    <a href="../index.html">Inicio</a>
+
+    <script>
+        // Array de colores para el fondo
+        const colors = ['#f9f9f9', '#ffebcd', '#ffe4e1', '#e6e6fa', '#fffacd', '#add8e6', '#d3ffce'];
+
+        // Función para cambiar el color de fondo
+        document.getElementById('colorChangeButton').addEventListener('click', function() {
+            // Selecciona un color aleatorio del array
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            // Cambia el color de fondo del body
+            document.body.style.backgroundColor = randomColor;
+        });
+    </script>
 </body>
 </html>

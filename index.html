@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Información sobre el cuidado de las uñas, incluyendo uñas acrílicas y uñas de gel.">
+    <meta name="keywords" content="uñas, cuidado de uñas, uñas acrílicas, uñas de gel">
     <title>Información sobre Uñas</title>
     <link rel="stylesheet" href="./styles/styles.css" />
     <style>
@@ -11,6 +13,7 @@
             background-color: #f9f9f9;
             margin: 0;
             padding: 20px;
+            transition: background-color 0.5s; /* Transición suave para el cambio de color */
         }
         .header {
             text-align: center;
@@ -35,6 +38,7 @@
             text-decoration: none;
             border-radius: 5px;
             text-align: center;
+            transition: background-color 0.3s;
         }
         a:hover {
             background-color: #ff1493;
@@ -73,6 +77,7 @@
             padding: 10px 15px;
             border-radius: 5px;
             cursor: pointer;
+            transition: background-color 0.3s;
         }
         button:hover {
             background-color: #ff1493;
@@ -92,12 +97,14 @@
             <a href="./nails studio/uñaacrilicas.html">Uñas Acrílicas</a>
             <a href="./nails studio/uñasdegelx.html">Uñas de Gel X</a>
         </nav>
+        <button id="colorChangeButton">Cambiar Color de Fondo</button>
     </div>
-    <img src="./imagenes/unas-acrilicas-vs-unas-de-gel.webp" alt="Comparación entre uñas acrílicas y uñas de gel">
+    
+    <img src="./imagenes/unas-acrilicas-vs-unas-de-gel.webp" alt="Comparación entre uñas acrílicas y uñas de gel" />
 
     <section class="form-section">
         <h2>¿Tienes preguntas sobre el cuidado de tus uñas?</h2>
-        <form>
+        <form action="your-server-endpoint" method="POST">
             <label for="nombre">Nombre:</label>
             <input type="text" id="nombre" name="nombre" required />
             <label for="email">Email:</label>
@@ -108,8 +115,17 @@
         </form>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Alexa Vindas. Todos los derechos reservados created by Andres Ugalde.</p>
-    </footer>
+    <script>
+        // Array de colores para el fondo
+        const colors = ['#f9f9f9', '#ffebcd', '#ffe4e1', '#e6e6fa', '#fffacd', '#add8e6', '#d3ffce'];
+
+        // Función para cambiar el color de fondo
+        document.getElementById('colorChangeButton').addEventListener('click', function() {
+            // Selecciona un color aleatorio del array
+            const randomColor = colors[Math.floor(Math.random() * colors.length)];
+            // Cambia el color de fondo del body
+            document.body.style.backgroundColor = randomColor;
+        });
+    </script>
 </body>
 </html>
